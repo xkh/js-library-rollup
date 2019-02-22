@@ -5,7 +5,7 @@ export default {
     input: 'src/main.js',
     output: {
         file: process.env.NODE_ENV === "production"?'lib/rollup.min.js':'lib/rollup.js',
-        format: 'umd',
+        format: 'cjs',
         name: 'xkh'
     },
     plugins: [
