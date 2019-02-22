@@ -3,6 +3,6 @@
 
 * [xkh.cjs.js](https://xkh.github.io/js-library-rollup/dist/xkh.cjs.js)
 * [xkh.esm.js](https://xkh.github.io/js-library-rollup/dist/xkh.esm.js)
-* [xkh.umd.js](https://xkh.github.io/js-library-rollup/dist/xkh.umd.js)
+* [script: xkh.umd.js](https://xkh.github.io/js-library-rollup/dist/xkh.umd.js)
 
 
