@@ -1,16 +1,20 @@
 {
-  "scripts": {
-    "clean": "rm -rf lib",
-    "dev": "npm run clean && rollup -c --environment NODE_ENV:development",
-    "build": "npm run clean && NODE_ENV=production && rollup -c --environment NODE_ENV:production",
-    "deploy": "npm run build && git add . && git commit -m 'rollup' && git push origin master"
-  },
+  "name": "js-library-rollup",
+  "version": "1.0.0",
+  "main": "dist/xkh.cjs.js",
+  "module": "dist/xkh.esm.js",
+  "browser": "dist/xkh.umd.js",
   "devDependencies": {
-    "@babel/core": "7.3.3",
-    "@babel/preset-env": "7.3.1",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-preset-latest": "6.24.1",
-    "rollup-plugin-babel": "4.3.2",
-    "rollup-plugin-uglify": "6.0.2"
-  }
+    "rollup": "1.0.0",
+    "rollup-plugin-commonjs": "9.2.0",
+    "rollup-plugin-node-resolve": "4.0.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "deploy": "npm run build && git add . && git commit -m deploy && git push origin master"
+  },
+  "files": [
+    "dist"
+  ]
 }

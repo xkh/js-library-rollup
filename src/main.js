@@ -1,5 +1,9 @@
-import foo from './foo.js';
+import foo from './foo'
+const toSay = (num) => {
+    console.log(foo)
+    console.log(`hello xkh~ 你输入了${num}`)
+};
 
-export default function () {
-    console.log('version..rollup..'+foo);
+export default {
+    toSay
 }
