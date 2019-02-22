@@ -4,7 +4,7 @@ import {uglify} from 'rollup-plugin-uglify';
 export default {
     input: 'src/main.js',
     output: {
-        file: process.env.NODE_ENV === "production"?'lib/first.rollup.min.js':'lib/first.rollup.js',
+        file: process.env.NODE_ENV === "production"?'lib/rollup.min.js':'lib/rollup.js',
         format: 'cjs'
     },
     plugins: [
