@@ -5,12 +5,15 @@
   "module": "dist/xkh.esm.js",
   "browser": "dist/xkh.umd.js",
   "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "rollup": "1.0.0",
+    "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "9.2.0",
-    "rollup-plugin-node-resolve": "4.0.0"
+    "rollup-plugin-node-resolve": "4.0.0",
+    "rollup-plugin-terser": "4.0.4"
   },
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c --environment:production",
     "dev": "rollup -c -w",
     "deploy": "npm run build && git add . && git commit -m deploy && git push origin master"
   },
