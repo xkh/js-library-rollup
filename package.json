@@ -3,7 +3,7 @@
     "clean": "rm -rf lib",
     "dev": "npm run clean && rollup -c --environment NODE_ENV:development",
     "build": "npm run clean && NODE_ENV=production && rollup -c --environment NODE_ENV:production",
-    "deploy": "git add . && git commit -m 'rollup && git push origin master'"
+    "deploy": "git add . && git commit -m 'rollup' && git push origin master"
   },
   "devDependencies": {
     "@babel/core": "7.3.3",
