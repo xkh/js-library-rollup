@@ -1,4 +1,8 @@
 import foo from './foo.js';
-export default function () {
-    console.log(`aa...${foo}`);
+const toSay = (num) => {
+    console.log(`hello rollup~ 你输入了${num}`)
+};
+
+export{
+    toSay
 }
